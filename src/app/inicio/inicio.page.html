@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+   
+    </ion-buttons> 
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header class="animated-header">
+      Bienvenido a Asistencias Estudiantiles {{ nombreUsuario }}
+    </ion-card-header>
+    <ion-card-content class="animacion">
+      <p>Esta es la página de inicio de la aplicación de Asistencias Estudiantiles.</p>
+      <p>El sistema estudiantil sera apto para realizar asistencias mediante un QR.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-img class="animated-image" 
+    src="https://uploads-eu-west-1.insided.com/buk-es/attachment/5b9786e7-8a11-4c3c-8050-847ba8905b0f_thumb.jpg"
+    alt="inicio"
+  ></ion-img>
+  <ion-list>
+    <ion-item button href="/servicios">
+      <ion-icon name="person"></ion-icon>
+      Cerrar Sesion
+    </ion-item>
+    <ion-item button (click)="openAsistenciasPage()">
+      <ion-icon ngame="calendar"></ion-icon>
+      Asistencias
+    </ion-item>
+  </ion-list>
+</ion-content>

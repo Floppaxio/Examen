@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>INGRESO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="animated-header">Iniciar sesión:</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <ion-item>
+          <ion-img class="animated-image" 
+            src="https://cdn.discordapp.com/attachments/1084263161726767165/1184538005390757908/duoc.jpg?ex=658c55fc&is=6579e0fc&hm=f582082c24ece2a55cfd9a471ddf282e55bfc68676dbbe7a5009e4c9276406ef&g"
+            alt="DuocUC Sede Melipilla"
+        ></ion-img>
+         
+        </ion-item>
+      </ion-col>  
+
+
+      <ion-card-content>
+        <form [formGroup]="formularioLogin">
+      <ion-col class="ion-text-center">
+        <ion-item>
+          <ion-label position="floating">Correo electrónico</ion-label>
+          <ion-input formControlName="nombre" type="email"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="contrasena" type="password"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col class="ion-text-center">
+        <ion-button type="submit" expand="block" (click)="ingresar()">Iniciar sesión</ion-button>
+        
+      </ion-col>
+  </form>
+   </ion-card-content>
+      <ion-col size="12" class="ion-text-center">
+        <ion-button fill="clear" size="small" href="/contacto">Restablecer contraseña</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

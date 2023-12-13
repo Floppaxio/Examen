@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+        <ion-back-button icon="arrow-back" defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Recuperar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3" size-lg="4" offset-lg="4">
+        <ion-item class="ion-margin-bottom">
+          <ion-label  class="titulo">Restablecer contraseña</ion-label>
+          <ion-label position="stacked">Correo Electrónico</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-button expand="full" color="primary" (click)="resetPassword()" class="ion-margin-top" href="/inicio">Restablecer Contraseña</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

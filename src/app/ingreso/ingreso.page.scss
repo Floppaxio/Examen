@@ -1,0 +1,29 @@
+.animated-image {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.animated-header {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

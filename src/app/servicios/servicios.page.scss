@@ -1,0 +1,38 @@
+/* Estilos CSS */
+
+/* Scanner Component Styles */
+.scanner {
+    width: 100%;
+    max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
+    height: auto;
+    margin: 10px auto;
+  }
+  
+  /* Data Display Styles */
+  .data-container {
+    margin-top: 20px;
+  }
+  
+  .data-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Loading Indicator Styles */
+  .loading {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Button Styles */
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF; /* Color azul, puedes cambiarlo según tus preferencias */
+    color: #fff; /* Texto en blanco para mayor contraste */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,26 @@
+><ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons> 
+    <ion-title>Servicios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- For camera -->
+<ngx-scanner-qrcode #action="scanner"></ngx-scanner-qrcode>
+
+<!-- data  -->
+<span>{{ action.data.value | json }}</span><!-- value -->
+<span>{{ action.data | async | json }}</span><!-- async -->
+
+<!-- Loading -->
+<p *ngIf="action.isLoading"> Loading...</p>
+
+<!-- start -->
+<button (click)="action.isStart ? action.stop() : action.start()">{{action.isStart ? 'Stop' : 'Start'}}</button>
+
+<ion-content class="ion-padding">
+  <ion-button (click)="logOut()">Cerrar Sesión</ion-button>
+</ion-content>
+

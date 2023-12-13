@@ -1,0 +1,7 @@
+{
+  "name": "myqr",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
